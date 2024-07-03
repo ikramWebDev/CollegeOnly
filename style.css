@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --title-color: #57ba6a;
+  --heading-color: #232233;
+  --para-color: #6c6c72;
+  --secondry-color: #ffffff;
+  --section-heading: 31px;
+  --secondry-heaing: 25px;
+  --paragraph: 16px;
+}
+/* /////////////////////////banner section//////////////////////// */
+.banner {
+  padding: 0;
+}
+
+.banner-img img {
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.banner-title img {
+  width: 275px;
+}
+.main-heading h2 {
+  color: #222022;
+  font-size: 51.429px;
+  font-weight: 400;
+  width: 660px;
+}
+.main-heading h2 span {
+  color: #57ba6a;
+  font-weight: 600;
+}
+/* ////download btn/// */
+.links-btn-container h5 {
+  color: var(--heading-color);
+  font-size: 22.056px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.085px;
+  text-transform: uppercase;
+}
+.links-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+.links-btn {
+  display: flex;
+  gap: 10px;
+}
+.market-btn {
+  display: inline-block;
+  width: 133px;
+  height: 40px;
+  -webkit-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  border: 1px solid #e7e7e7;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.market-btn .market-button-title {
+  display: block;
+  color: var(--secondry-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.market-btn .market-button-subtitle {
+  display: block;
+  color: var(--secondry-color);
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 300;
+}
+.apple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
