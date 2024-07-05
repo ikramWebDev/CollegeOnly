@@ -15,3 +15,16 @@ const aboutCard = [
       paragraph: "Relish all-in-one interactions with the CollegeOnly app that optimize performance, ensuring fast load times, minimal glitches, and an overall smooth user experience.",
     },
   ];
+  function togglePlayPause() {
+    const video = document.getElementById('videoElement');
+    const playIcon = document.getElementById('playIcon');
+    const videoContainer = document.querySelector('.video-container');
+    
+    if (video.paused) {
+      video.play();
+      videoContainer.classList.add('playing');
+    } else {
+      video.pause();
+      videoContainer.classList.remove('playing');
+    }
+  }
