@@ -6,6 +6,11 @@
     <title>CollegeOnly</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />     
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
   </head>
   <body>
     <main>
@@ -232,9 +237,32 @@
             </p>
           </div>
         </div>
-        <div class="center">
-          <img src="./assets/mobile-img.png" alt="" />
+        <div class="center" style="width:100%; background: red;">
+          <div class="carousel">
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/11/24/02/03/beach-3834918_1280.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/11/10/22/57/nature-3807667_1280.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2019/03/23/07/15/leopard-4074794_1280.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/11/20/12/54/butterfly-3827374_1280.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/12/20/10/22/forest-3885627_1280.jpg">
+            </div>
+            <img src="./iphoneX.png" class="mobile">
         </div>
+        </div>
+
+
+        <!-- /////////////////////// -->
+
+
+        <!-- /////////////////////// -->
         <!-- /* ////////////Download App now////////// */ -->
         <div
           class="app-networking-container container"
@@ -369,14 +397,13 @@
 
       <!-- ////////////////////// Contact Information/////////// -->
 
-      <section
-        class="contact">
-        <div class="container">
+      <section class="contact">
+        <div class="contact-container">
           <div class="contact-bg-img">
-            <img src="./assets/contact-us-bg.webp" alt="" />
+            <img src="./assets/contact-us-bg.png" alt="" />
           </div>
-          <div class="contact-form">
-            <div class="contact-form-left" style="flex: 2;">
+          <div class="contact-form container">
+            <div class="contact-form-left" style="width: 40%;">
               <div class="contact-form-details">
                 <div class="contact-info">
                   <h4>Contact Information</h4>
@@ -401,21 +428,117 @@
                 </div>
               </div>
             </div>
-            <div class="contact-form-right" style="flex: 3;">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempore quo accusantium architecto inventore atque! Sint, nobis
-                possimus! Voluptas adipisci tempora ratione officia consectetur
-                a veritatis rem iste veniam similique? Optio!
-              </p>
+            <div class="contact-form-right" style="width: 60%;">
+              <div class="form-input-container">
+                <div class="name-input">
+                  <div>
+                    <label for="name">First Name</label>
+                    <input type="input" placeholder="John"/>
+                  </div>
+                  <div>
+                    <label for="name">last Name</label>
+                    <input type="input" placeholder="Doe"/>
+                  </div>
+                </div>
+
+                <div class="contact-input">
+                  <div >
+                    <label for="mail">Email</label>
+                    <input type="input" placeholder="demo@gmail.com"/>
+                  </div>
+                  <div >
+                    <label for="name">Phone Number</label>
+                    <input type="PHONE" placeholder="+1 012 3456 789"/>
+                  </div>
+                </div>
+              </div>
+              <div class="check-boxes">
+                <h4>Select Subject?</h4>
+                
+                <div class="select-subject" >
+                  <div class="check-contain">
+                  <label class="check-boxe">
+                    <input type="checkbox" checked="checked" class="resetCheckbox">
+                    <div class="checkmark"></div>
+                  </label>
+                  <span>General Inquiry</span>
+                </div>
+                <div class="check-contain">
+                  <label class="check-boxe">
+                    <input type="checkbox" checked="checked" class="resetCheckbox">
+                    <div class="checkmark"></div>
+                  </label>
+                  <span>General Inquiry</span>
+                </div>
+                <div class="check-contain">
+                  <label class="check-boxe">
+                    <input type="checkbox" checked="checked" class="resetCheckbox">
+                    <div class="checkmark"></div>
+                  </label>
+                  <span>General Inquiry</span>
+                </div>
+                <div class="check-contain">
+                  <label class="check-boxe">
+                    <input type="checkbox" checked="checked" class="resetCheckbox">
+                    <div class="checkmark"></div>
+                  </label>
+                  <span>General Inquiry</span>
+                </div>
+                </div>
+              </div>
+              <div class="textarea" style="margin-top: 40px;">
+                <label for="name">Message</label>
+                <textarea name="" placeholder="Write your massage.."></textarea>
+              </div>
+              <div class="submit-btn">
+                <a href="">Send Message</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      
+      <!-- /////////////////////end//////////////// -->
+      <section class="copy-rights-follows">
+        <div class="follows container">
+          <span>Follow us</span>
+          <img src="./assets/facebook-fill.svg" alt="">
+          <img src="./assets/Group.svg" alt="">
+          <img src="./assets/5969020 2.svg" alt="">
+        </div>
+        <div class="copy-right container">
+          <p>Privacy Policy | CollegeOnly Support</p>
+          <p>Copyright © App. All Rights Reserved.</p>
+        </div>
+      </section>
     </main>
 
+
+   
     <script src="./data.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+         <!-- Compiled, minified JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script type="text/javascript">
+             // jQuery
+               document.addEventListener('DOMContentLoaded', function() {
+     var elems = document.querySelectorAll('.carousel');
+     var instances = M.Carousel.init(elems);
+   });
+         </script>
+         <script type="text/javascript">
+          
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-36251023-1']);
+   _gaq.push(['_setDomainName', 'jqueryscript.net']);
+   _gaq.push(['_trackPageview']);
+ 
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();  
+ 
+ </script>
+ 
   </body>
 </html>

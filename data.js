@@ -28,3 +28,89 @@ const aboutCard = [
       videoContainer.classList.remove('playing');
     }
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkboxes = document.querySelectorAll('.resetCheckbox');
+
+    checkboxes.forEach(function(checkbox) {
+      checkbox.checked = false;
+    });
+  });
+
+  // Mobiles Slider
+
+$(document).ready(function () {
+  // Function to initialize the carousel with different number of slides
+  function initializeCarousel(numVisible, dist) {
+ let error =  $(".carousel")
+ console.log('error',error)
+ error.carousel({
+      // Transition duration in milliseconds.
+      duration: 200,
+
+      // Perspective zoom. If 0, all items are the same size.
+      dist: dist,
+
+      // Set the spacing of the center item.
+      shift: 0,
+
+      // Set the padding between non center items.
+      padding: 80,
+
+      // Set the number of visible items.
+      numVisible: numVisible,
+
+      // Make the carousel a full width slider
+      fullWidth: false,
+
+      // Set to true to show indicators.
+      indicators: true,
+
+      // Don't wrap around and cycle through items.
+      noWrap: false,
+
+      // Callback for when a new slide is cycled to.
+      onCycleTo: null,
+    });
+
+    // Set up autoplay
+    setInterval(function () {
+      $(".carousel").carousel("next");
+    }, 3500);
+  }
+
+  // Function to adjust carousel settings based on window width
+  function adjustCarousel() {
+    var windowWidth = $(window).width();
+
+    if (windowWidth <= 575) {
+      initializeCarousel(2, -200);
+    } else if (windowWidth <= 767) {
+      initializeCarousel(3, -300);
+    } else if (windowWidth <= 991) {
+      initializeCarousel(4, -200);
+    } else if (windowWidth <= 1199) {
+      initializeCarousel(4, -100);
+    } else {
+      initializeCarousel(5, -100);
+    }
+  }
+
+  // Initialize the carousel based on the current window width
+  adjustCarousel();
+
+  // Re-adjust the carousel settings when the window is resized
+  $(window).resize(function () {
+    adjustCarousel();
+  });
+
+  // Arrow button controls
+  $(".carousel-arrow.left").click(function () {
+    $(".carousel").carousel("prev");
+  });
+
+  $(".carousel-arrow.right").click(function () {
+    $(".carousel").carousel("next");
+  });
+
+})
